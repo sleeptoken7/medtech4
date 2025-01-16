@@ -1,4 +1,4 @@
-# cnexternal
+
 //FRAMING#include <stdio.h>
 #include <string.h>
 void receiver();
@@ -36,6 +36,7 @@ lpvar=i+framelen;
 while(i<lpvar){
 printf("%c",frames[i++]);}
 printf("\n");}}
+
 //BITSTUFF
 #include <stdio.h>
 #include <string.h>
@@ -51,6 +52,7 @@ if (count == 5) stuffed[j++] = '0', count = 0;}
 stuffed[j] = ‘\0’;
 printf("Bit-stuffed data: %s\n", stuffed);
 return 0;}
+
 //DVR
 #include<stdio.h>
 struct node {
@@ -81,6 +83,7 @@ printf("\nRouter %d table:\n", i + 1);
 printf("Node\tVia\tDist\n");
 for (j = 0; j < n; j++) {
 printf("%d\t%d\t%d\n", j + 1, rt[i].from[j] + 1, rt[i].dist[j]);}}return 0;}
+
 //LeakyBUCKET#include <stdio.h>
 #define MIN(x, y) ((x) > (y) ? (y) : (x))
 int main() {
@@ -102,6 +105,7 @@ drop = (remain + inp > orate) ? (remain + inp - orate) : 0;
 remain = (remain + inp > orate) ? (remain + inp - orate) : 0;
 printf("%d\t%d\t\t%d\t%d\t%d\n", i, inp, sent, drop, remain);}
 return 0;}
+
 //NS3-1
 #include "ns3/netanim-module.h" #include "ns3/core-module.h" #include "ns3/network-module.h" #include "ns3/internet-module.h" #include "ns3/point-to-point-module.h" #include "ns3/applications-module.h" 
 using namespace ns3; 
