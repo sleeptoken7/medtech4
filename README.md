@@ -131,6 +131,16 @@ clientApps.Stop (Seconds (10.0)); AnimationInterface anim ("first.xml"); Simulat
 Simulator::Destroy (); 
 return 0; }
 
+cd ns-allinone-3.33/ns-3.33/scratch/
+gedit pr1.cc
+cd..
+./waf
+./waf --run scratch/pr1
+export NS_log=
+cd..
+cd netanim-3.108/
+./NetAnim
+
 Ns3-2-
 #include <fstream>
 #include "ns3/core-module.h"
